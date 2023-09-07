@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    color: #dcb;
+    font-family: 'lola', sans-serif, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: white;
+    margin-top: 100px;
+}
+
+:root {
+    --color-uno: #234;
+    --color-dos: #112;
+    --color-tes: #224;
+    --color-cuatro: #449;
+    --color-resalte: #fc3;
+    --color-font: #dcb;
+}
+
+    .burg {
+    background-color: var(--color-dos);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.burg .burg__div1 {
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.burg .burg__div1 img {
+    object-fit: cover;
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 50%;
+    border: var(--color-resalte) 3px solid;
+}
+
+.burg .burg__div2 {
+    padding: 20px;
+    width: 500px;
+    min-width: 80%;
+    /* si no le pongo un width definido no se coloca al lado una vez que agrego la propiedad wrap */
+    flex-grow: 3;
+    flex-shrink: 4;
+}
+
+.burg .burg__div2 h6 {
+    color: var(--color-resalte);
+    font-size: large;
+    text-align: center;
+    padding: 2px 10px 20px 10px;
+    letter-spacing: 5px;
+    font-family: Bungee, cursive;
+    text-shadow: 2px 4px 3px var(--color-cuatro);
+
+}
+
+.burg .burg__div2 p {
+    font-size: medium;
+    text-align: center;
+}
+
+.burg .burg__div2 p span {
+    font-size: large;
+    text-align: center;
+    color: var(--color-resalte);
+}
+
+    </style>
+</head>
+<body>
+    <section class="burg">
+        <div class="burg__div1" >
+            <img src="https://recetasdeusa.com/wp-content/uploads/2022/05/Hamburguesa-americana-1-scaled.jpg" alt="foto hamburguesa" >
+        </div>
+        <div class="burg__div2">
+            <h6>Burguer 1</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quas excepturi nulla amet accusantium eveniet et, ut dolor odio iure totam obcaecati eum exercitationem dolores possimus itaque vitae dolorum.i <br>  <span>A solo 690$</span> </p>
+        </div>
+        <div class="burg__div1" >
+            <img src="https://recetasdeusa.com/wp-content/uploads/2022/05/Hamburguesa-americana-1-scaled.jpg" alt="foto hamburguesa" >
+        </div>
+        <div class="burg__div2">
+            <h6>Burguer 1</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quas excepturi nulla amet accusantium eveniet et, ut dolor odio iure totam obcaecati eum exercitationem dolores possimus itaque vitae dolorum.i <br>  <span>A solo 690$</span> </p>
+        </div>
+        <div class="burg__div1" >
+            <img src="https://recetasdeusa.com/wp-content/uploads/2022/05/Hamburguesa-americana-1-scaled.jpg" alt="foto hamburguesa" >
+        </div>
+        <div class="burg__div2">
+            <h6>Burguer 1</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quas excepturi nulla amet accusantium eveniet et, ut dolor odio iure totam obcaecati eum exercitationem dolores possimus itaque vitae dolorum.i <br>  <span>A solo 690$</span> </p>
+        </div>
+        <div class="burg__div1" >
+            <img src="https://recetasdeusa.com/wp-content/uploads/2022/05/Hamburguesa-americana-1-scaled.jpg" alt="foto hamburguesa" >
+        </div>
+        <div class="burg__div2">
+            <h6>Burguer 1</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quas excepturi nulla amet accusantium eveniet et, ut dolor odio iure totam obcaecati eum exercitationem dolores possimus itaque vitae dolorum.i <br>  <span>A solo 690$</span> </p>
+        </div>
+    </section>
+    
+
+</body>
+</html>

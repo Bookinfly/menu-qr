@@ -1,0 +1,583 @@
+
+* {
+    color: #dcb;
+    font-family: 'lola', sans-serif, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #023;
+    margin-top: 100px;
+}
+
+:root {
+    --color-uno: #234;
+    --color-dos: #112;
+    --color-tes: #224;
+    --color-cuatro: #449;
+    --color-resalte: #fc3;
+    --color-font: #dcb;
+}
+
+header {
+    margin-top: -110px;;
+    display: block;
+    font-size: 30px;
+    height: 100px;
+    position: fixed;
+    background-color: #234;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+}
+
+.header__logo-box {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100px;
+    padding: 10px 30px;
+    /* border: solid red 1px;  */
+    /* fallaba por falta del position absolute */
+    top: 0;
+    left: 0;
+}
+
+.header__logo-box-img {
+    box-sizing: content-box;
+}
+
+nav {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+
+.header__nav-ul {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    direction: rtl;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__nav-li {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 20px;
+}
+
+.header__nav-li-a {
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--color-resalte);
+    font-family: 'Bungee', cursive;
+    text-shadow: 2px 4px 3px #112;
+}
+
+/* ---------------------------------- */
+.home {
+    width: 95%;
+    border-radius: 4%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    background-color: var(--color-tes);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 10px;
+}
+
+.home-h1 {
+    font-family: Bungee, cursive;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 20px;
+    color: var(--color-resalte);
+    border-width: 2px;
+    width: 100%;
+}
+
+.home__cont1 {
+    width: 100%;
+}
+
+.home__cont1-h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: Bungee, cursive;
+    color: var(--color-font);
+    letter-spacing: 10px;
+}
+
+.home__cont2 {
+    background: var(--color-uno);
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.home__cont2-div {
+    margin: 10px;
+    padding: 10px 10px;
+    flex-grow: 1;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 1;
+
+}
+
+.home__cont2-div-p {
+
+    text-align: center;
+    font-size: larger;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.home__cont2-div2 {
+    flex-grow: 2;
+    flex-shrink: 0;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    /* agregar un @media screen en el centro de los tamaños */
+}
+
+.home__cont2-div2-img {
+    max-width: 100%;
+    border-radius: 20%;
+}
+
+
+/* ---------------------------------- */
+
+
+.main-galeria {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-galeria div {
+    height: 150px;
+    flex-grow: 1; /*como reparte el espacio*/
+    box-sizing: border-box; /*establece que el contenido se deba adaptar a la caja*/
+    background-color: #fc3;
+    border: #112 solid 4px;
+}
+
+.main-galeria div img {
+
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.main-galeria .img1 {
+    /* flex-shrink:;cuanto cede cada caja */
+    flex-grow: 1; /*como reparte el espacio*/
+    background-color: #449;
+    flex-shrink: 1;
+}
+
+.main-galeria .img2 {
+    flex-shrink: 2;
+    flex-grow: 1; /*como reparte el espacio*/
+
+}
+
+.main-galeria .img3 {
+    flex-shrink: 1;
+    flex-grow: 1; /*como reparte el espacio*/
+
+}
+
+.main-galeria .img4 {
+    flex-shrink: 1;
+    flex-grow: 1; /*como reparte el espacio*/
+
+}
+
+.main-galeria .img5 {
+    flex-shrink: 2;
+    flex-grow: 1; /*como reparte el espacio*/
+
+}
+
+.div-subtitulo {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-h2 {
+    margin-top: 20px;
+    display: block;
+    letter-spacing: 20px;
+    font-family: Bungee, cursive;
+    text-align: center;
+    font-size: 40px;
+    
+    color: var(--color-resalte);
+    border-width: 2px;
+    padding: 20px;
+    padding: 20px;
+    border: #fc3 4px solid;
+    width: 100%;
+}
+
+.burg {
+    margin-top: 150px;
+    background-color: var(--color-dos);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.burg .burg__div1 {
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.burg .burg__div1 img {
+    object-fit: cover;
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 50%;
+    border: var(--color-resalte) 3px solid;
+}
+
+.burg .burg__div2 {
+    padding: 20px;
+    width: 500px;
+    min-width: 80%;
+    /* si no le pongo un width definido no se coloca al lado una vez que agrego la propiedad wrap */
+    flex-grow: 3;
+    flex-shrink: 4;
+}
+
+.burg .burg__div2 h6 {
+    color: var(--color-resalte);
+    font-size: large;
+    text-align: center;
+    padding: 2px 10px 20px 10px;
+    letter-spacing: 5px;
+    font-family: Bungee, cursive;
+    text-shadow: 2px 4px 3px var(--color-cuatro);
+
+}
+
+.burg .burg__div2 p {
+    font-size: medium;
+    text-align: center;
+}
+
+.burg .burg__div2 p span {
+    font-size: large;
+    text-align: center;
+    color: var(--color-resalte);
+}
+
+
+
+
+
+
+/* .burg {
+
+    border: var(--color-resalte) solid 4px;
+    contenedor principal del section
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.burg:first-child {
+    primer hijo, el div que contiene la imagen
+    flex-grow: 1; 
+    flex-shrink: 1;
+    box-sizing: border-box; 
+}
+
+.burg div img {
+    la foto
+    object-fit: cover; 
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.burg:nth-child(2) {
+    segundo hijo el div que contiene el texto
+    flex-grow: 1; 
+    flex-shrink: 1;
+    box-sizing: border-box;
+} */
+
+
+
+
+
+
+
+/* .burg {
+    grid-area: burg;
+    margin-top: 150px;
+    width: 90%;
+
+    background-color: var(--color-dos);
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    flex-direction: row;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+}
+
+.item-menu {
+    width: 100%;
+    border-radius: 2%;
+
+
+}
+
+.div--fotito {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    background-color: #fc3;
+    overflow: hidden; 
+    object-fit: cover; 
+}
+
+
+
+.foto--menu {
+    width: 250px;
+    height: 250px;
+
+}
+
+.texto {
+    height: 250px;
+    border: #fc3 4px solid;
+    margin: 10px 10px 10px 10px;
+    border-radius: 3%;
+    padding: 20px 20px 20px 20px;
+
+
+    flex-shrink: 3;
+    flex-grow: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* intentos con flex abajo de la grid area.  */
+/* .menu {
+    grid-area: fCont;
+    margin-top: 150px;
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-dos);
+    box-sizing: border-box;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: #fc3 solid 4px;
+}
+
+.sector-menu {
+    flex-direction: column;
+}
+
+.sector-menu div {
+    background-color: black;
+    border: #dcb 2px dashed;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .item-menu {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start ;
+    background-color: #dcb;
+} */
+
+
+/* .texto-item {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: red 5px solid;
+} */
+
+/* .item-menu h5 {
+    text-align: center;
+    font-size: 25px;
+    color: #fc3;
+} */
+
+/* .item-menu p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 50%;
+    min-width: 30%;
+} */
+
+/* .item-menu p i {
+    text-align: center;
+    font-size: 20px;
+    color: #fc3;
+} */
+
+/* .foto-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; 
+    overflow: hidden; 
+    flex-grow: 1;
+    border: red 5px solid;
+} */
+
+
+
+
+
