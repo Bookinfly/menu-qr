@@ -2,6 +2,7 @@
 * {
     color: #dcb;
     font-family: 'lola', sans-serif, serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -139,7 +140,6 @@ header {
     }
 }
 
-
 @media only screen and (max-width: 900px) {
     .header {
         height: 60px;
@@ -147,7 +147,6 @@ header {
 
     .header__logo-box {
         display: none;
-
     }
 
     .header__nav {
@@ -160,15 +159,10 @@ header {
         background-color: #234;
     }
 
-    .header__navResponsive--div {
-        width: 0;
-        height: 0;
-    }
-
     .header__navResponsive--div label {
         position: relative;
         left: 0;
-        top: 0;
+        top: 15px;
     }
 
     .header__navResponsive--div label i {
@@ -184,33 +178,49 @@ header {
 
     .header__navResponsive--div ul {
         display: inline-block;
-        position: relative;
-        top: -180px;
-        transition: 2s;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        -ms-transition: 2s;
-        -o-transition: 2s;
-}
+        position: absolute;
+        background-color: #234;
+        font-size: 30px;
+        width: 70vw;
+        padding: 5px;
+        top: -1000px;
+    }
 
-    .header__navResponsive--div ul li a {
-        text-decoration: none;
-        font-size: 15px;
+    .header__navResponsive--div ul li {
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+        width: 100%;
+        /* border-bottom: #fc3 solid 1px;
+        border-right: #fc3 solid 1px; */
+        margin: 10px;
+        text-align: center;
     }
 
     #bars {
         position: relative;
+        top: -100px;
+        /* ocultamos el checkbox */
     }
 
-    #bars:checked + .header__navResponsive--div ul {
-        top: 0;
+    .header__navResponsive--div input:checked ~ ul {
+        top: 60px;
+        left: 0;
+}
+
+    .header__navResponsive--div ul li a{
+        font-size: 20px;
+        text-decoration: none;
     }
 
-
-
-
-
-
+    .header__navResponsive--div ul li a:hover {
+        display: inline-block;
+        background-color: #fc3;
+        color: #112;
+        width: 100%;
+        padding: 10px;
+        font-weight: 700;
+    }
 
 }
 /* ---------------------------------- */
